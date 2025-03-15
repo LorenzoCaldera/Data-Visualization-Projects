@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Serif');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+#title {
+  font-family: 'Roboto Serif', serif; 
+  text-align: center;
+}
+#chart {
+  position: relative;
+  align-self: center;
+}
+#tooltip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  background-color: white;
+  padding: 2px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 12px;
+  border-radius: 2px;
+  border: 1px solid black;
+  pointer-events: none;
+  user-select: none;
+}
+#legend {
+  font-family: sans-serif;
+  pointer-events: none;
+  user-select: none;
+}
+.dot {
+  opacity: 0.65;
+  stroke: black;
+  transition: all .3s;
+}
+.dot:hover {
+  opacity: 0.9;
+  stroke-width: 1.5;
+}
