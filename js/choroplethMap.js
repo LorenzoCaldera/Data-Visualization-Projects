@@ -1,5 +1,5 @@
-const educationApiURL = '//cdn.freecodecamp.org/testable-projects-fcc/data/choropleth_map/for_user_education.json',
-      countyApiURL = '//cdn.freecodecamp.org/testable-projects-fcc/data/choropleth_map/counties.json';
+const educationApiURL = 'https://cdn.freecodecamp.org/testable-projects-fcc/data/choropleth_map/for_user_education.json',
+      countyApiURL = 'https://cdn.freecodecamp.org/testable-projects-fcc/data/choropleth_map/counties.json';
 
 Promise.all([
   fetch(educationApiURL),
